@@ -14,7 +14,7 @@ const router=createBrowserRouter([
   {
     path:'/',
     element:<App></App>,
-    loader:()=>fetch('http://localhost:7000/coffee')
+    loader:()=>fetch('https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/coffee')
   },
   {
     path:'/addUser',
@@ -31,13 +31,13 @@ element:<Register></Register>
   {
     path:'/users',
     element:<Users></Users>,
-    loader:()=>fetch(`http://localhost:7000/user`)
+    loader:()=>fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/user`)
   },
  
   {
     path:'updateCoffee/:id',
     element:<UpdateUser></UpdateUser>,
-    loader:({params})=>fetch(`http://localhost:7000/coffee/${params.id}`)
+    loader:({params})=>fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/coffee/${params.id}`)
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(

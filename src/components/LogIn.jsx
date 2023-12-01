@@ -15,7 +15,7 @@ const LogIn = () => {
             email,
             lastLoggedAt:result.user?.metadata?.lastSignInTime
           }
-          fetch(`http://localhost:7000/user`,{
+          fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/user`,{
             method:"PATCH",
             headers:{
               'content-type':'application/json'

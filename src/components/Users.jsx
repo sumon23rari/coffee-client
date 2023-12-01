@@ -17,7 +17,7 @@ const Users = () => {
     })
     .then((result)=>{
       if (result.isConfirmed) {
-        fetch(`http://localhost:7000/user/${id}`)
+        fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/user/${id}`)
         .then(res=>res.json())
         .then(data=>{
           if(data.deletedCount > 0){
