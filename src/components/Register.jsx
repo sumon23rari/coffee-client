@@ -15,7 +15,7 @@ const Register = () => {
           console.log(result)
           const createdAt=result.user?.metadata?.creationTime
           const user={email,createdAt:createdAt}
-          fetch('https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/user',{
+          fetch('https://coffee-project-4fccf.web.app/user',{
             method:'POST',
             headers:{
               'content-Type':'application/json'

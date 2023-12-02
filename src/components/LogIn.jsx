@@ -15,7 +15,7 @@ const LogIn = () => {
             email,
             lastLoggedAt:result.user?.metadata?.lastSignInTime
           }
-          fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/user`,{
+          fetch(`https://coffee-project-4fccf.web.app/user`,{
             method:"PATCH",
             headers:{
               'content-type':'application/json'

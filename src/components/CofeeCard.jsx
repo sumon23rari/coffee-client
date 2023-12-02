@@ -26,7 +26,7 @@ import PropTypes from 'prop-types';
                 if (result.isConfirmed) {
     
     
-                    fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/coffee/${id}`, {
+                    fetch(`https://coffee-project-4fccf.web.app/coffee/${id}`, {
                         method: 'DELETE'
                     })
                         .then(res => res.json())

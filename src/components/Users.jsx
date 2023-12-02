@@ -17,7 +17,7 @@ const Users = () => {
     })
     .then((result)=>{
       if (result.isConfirmed) {
-        fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/user/${id}`)
+        fetch(`https://coffee-project-4fccf.web.app/user/${id}`)
         .then(res=>res.json())
         .then(data=>{
           if(data.deletedCount > 0){

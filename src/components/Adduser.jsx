@@ -12,7 +12,7 @@ const Adduser = () => {
         const details=form.details.value;
         const photo=form.photo.value;
         const newCoffee={coffeeName,chiefCoffee,supplier,taste,category,details,photo}
-        fetch(`https://copy-server-l6uw3ypkp-sumon23rari.vercel.app/coffee`,{
+        fetch(`https://coffee-project-4fccf.web.app/coffee`,{
           method:'POST',
           headers:{
             "Content-Type":"application/json"
